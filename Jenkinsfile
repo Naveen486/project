@@ -7,12 +7,12 @@ pipeline {
         stage('Build go app') {
             steps {
                 sh 'go version'
-                sh 'go run project.go'
+                sh 'go run public.go'
             }
         }
         stage('dockerbuild'){
             steps {
-                sh docker build -t firstdoc .
+                sh 'docker build -t firstdoc .'
                 }
         }
     }
