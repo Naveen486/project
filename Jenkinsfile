@@ -14,7 +14,7 @@ pipeline {
             
             steps{
                 sh 'docker -v'
-                sh 'docker build -t firstdock .'
+                sh 'sudo docker build -t firstdock .'
             }
         }
     }
