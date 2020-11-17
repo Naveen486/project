@@ -10,6 +10,10 @@ pipeline {
                 sh 'go run public.go'
             }
         }
+        stage('Building docker image'){
+            
+            steps{
+                sh 'docker -v'
    
     }
 }
