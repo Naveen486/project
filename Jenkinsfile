@@ -10,10 +10,6 @@ pipeline {
                 sh 'go run public.go'
             }
         }
-        stage('dockerbuild'){
-            steps {
-                sh 'docker build -t firstdoc .'
-                }
-        }
+   
     }
 }
